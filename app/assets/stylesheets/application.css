@@ -1,13 +1,17 @@
 body {
  background-image: url("https://i.imgur.com/WJBONJk.jpg");
-}
+ }
 
 .Registro {
   background-color: white;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 47rem 1rem 0rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
-}
+  }
+
+nav .navbar-nav li{
+  color: #000000 !important;
+  }
 /*
 
 
