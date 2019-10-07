@@ -1,5 +1,5 @@
 body {
- background-image: url("bg.jpg");
+ background-image: url("https://i.imgur.com/WJBONJk.jpg");
 }
 
 .Registro {
@@ -8,8 +8,9 @@ body {
   margin: 1rem 47rem 1rem 0rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
 }
-
 /*
+
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
