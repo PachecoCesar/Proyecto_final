@@ -1,0 +1,19 @@
+
+
+
+<p id="notice"><%= notice %></p>
+
+
+  <% @rents.each do |rent| %>
+  <%= render 'shared/carousel:img'%>
+  <h2><%= rent.tittle %></h2>
+  <p><%= rent.description %></p>
+  <h4> Ubicacion</h4>
+  <p><%= rent.address %></p>
+  <small class="text-muted"><%=time_ago_in_words tweet.updated_at%></small>
+
+    <% end %>
+
+
+
+<%= link_to 'Regresar', user_index_path, class: 'btn btn-danger'  %>

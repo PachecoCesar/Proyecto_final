@@ -3,15 +3,29 @@ body {
  }
 
 .Registro {
-  background-color: white;
+  background-color: #ffffff;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 47rem 1rem 0rem;
+  border-style: solid;
+  border-color: #333333;
+  border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
   }
 
-nav .navbar-nav li{
+nav .navbar-link li{
   color: #000000 !important;
   }
+
+.FormRent {
+  background-color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 47rem 1rem 0rem;
+  border-style: solid;
+  border-color: #333333;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
+  }
+
 /*
 
 

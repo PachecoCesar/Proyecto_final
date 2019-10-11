@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_06_212940) do
+ActiveRecord::Schema.define(version: 2019_10_11_151828) do
+
+  create_table "rents", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "address"
+    t.string "town"
+    t.string "city"
+    t.integer "postal_code"
+    t.integer "latitude"
+    t.integer "longitude"
+    t.integer "price"
+    t.string "photos"
+    t.string "type"
+    t.integer "rooms"
+    t.string "description"
+    t.string "time"
+    t.string "bath"
+    t.string "gender"
+    t.boolean "lgtb"
+    t.boolean "pets"
+    t.boolean "smoker"
+    t.boolean "drugs"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "title"
+    t.index ["user_id"], name: "index_rents_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -29,4 +55,5 @@ ActiveRecord::Schema.define(version: 2019_10_06_212940) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "rents", "users"
 end
