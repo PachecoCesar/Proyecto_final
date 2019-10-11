@@ -1,16 +1,25 @@
+  <% @rente.each do |rent| %>
+    <%= render 'shared/carousel:img'%>
+    <h2><%= rent.tittle %></h2>
+    <p><%= rent.description %></p>
+    <h4> Ubicacion</h4>
+    <p><%= rent.address %></p>
+    <p><%= rent.town %></p>
+    <p><%= rent.city %></p>
+    <h4> Descripcion propiedad</h4>
+
+    <p><%= rent.rooms %></p>
+    <p><%= rent.bath %></p>
+    <p><%= rent.price %></p>
+    <h4> Roommate ideal</h4>
+    <p><%= rent.gender %></p>
+    <p><%= rent.time %></p>
+    <p><%= rent.lgtb %></p>
+    <p><%= rent.pets %></p>
+    <p><%= rent.smoker %></p>
 
 
-
-<p id="notice"><%= notice %></p>
-
-
-  <% @rents.each do |rent| %>
-  <%= render 'shared/carousel:img'%>
-  <h2><%= rent.tittle %></h2>
-  <p><%= rent.description %></p>
-  <h4> Ubicacion</h4>
-  <p><%= rent.address %></p>
-  <small class="text-muted"><%=time_ago_in_words tweet.updated_at%></small>
+    <small class="text-muted"><%=time_ago_in_words @rente.updated_at%></small>
 
     <% end %>
 

@@ -3,6 +3,7 @@
   <%= form_with(model: @rent, local: true) do |form| %>
     <div class="field">
 
+      <h4> Ubicacion</h4>
       <div class="address">
         <%= form.label :address %> <br>
         <%= form.text_field :address %>
@@ -22,7 +23,8 @@
         <%= form.label :postal_code %> <br>
         <%= form.text_field :postal_code %>
       </div>
-
+      <br>
+      <h4> Descripcion propiedad</h4>
       <div class="photos">
         <%= form.label :photos %> <br>
         <%= form.text_field :photos %>
@@ -33,19 +35,52 @@
         <%= form.text_field :title %>
       </div>
 
-      <div class="type">
-        <%= form.label :type %> <br>
-        <%= form.text_field :type %>
+      <div class="description">
+        <%= form.label :description %> <br>
+        <%= form.text_area :description %>
       </div>
+
+    
 
       <div class="rooms">
         <%= form.label :rooms %> <br>
         <%= form.text_field :rooms %>
       </div>
 
-      <div class="description">
-        <%= form.label :description %> <br>
-        <%= form.text_area :description %>
+      <div class="bath">
+        <%= form.label :bath %> <br>
+        <%= form.text_field :bath %>
+      </div>
+
+      <div class="price">
+        <%= form.label :price %> <br>
+        <%= form.text_field :price %>
+      </div>
+      <br>
+      <h4> Roommate ideal</h4>
+      <div class="gender">
+        <%= form.label :gender %> <br>
+        <%= form.text_field :gender %>
+      </div>
+
+      <div class="time">
+        <%= form.label :time %> <br>
+        <%= form.text_field :time %>
+      </div>
+
+      <div class="lgtb">
+        <%= form.label :lgtb %> <br>
+        <%= form.check_box :lgtb %>
+      </div>
+
+      <div class="pets">
+        <%= form.label :pets %> <br>
+        <%= form.check_box :pets %>
+      </div>
+
+      <div class="smoker">
+        <%= form.label :smoker %> <br>
+        <%= form.check_box :smoker %>
       </div>
 
       <div class="actions"> <br>
