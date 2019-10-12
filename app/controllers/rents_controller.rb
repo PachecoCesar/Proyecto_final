@@ -16,7 +16,7 @@ class RentsController < ApplicationController
   end
 
   def show
-    
+
   end
 end
 
