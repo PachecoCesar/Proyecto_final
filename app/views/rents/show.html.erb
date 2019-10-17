@@ -1,28 +1,23 @@
-  <% @rente.each do |rent| %>
-    <%= render 'shared/carousel:img'%>
-    <h2><%= rent.tittle %></h2>
-    <p><%= rent.description %></p>
-    <h4> Ubicacion</h4>
-    <p><%= rent.address %></p>
-    <p><%= rent.town %></p>
-    <p><%= rent.city %></p>
-    <h4> Descripcion propiedad</h4>
-
-    <p><%= rent.rooms %></p>
-    <p><%= rent.bath %></p>
-    <p><%= rent.price %></p>
-    <h4> Roommate ideal</h4>
-    <p><%= rent.gender %></p>
-    <p><%= rent.time %></p>
-    <p><%= rent.lgtb %></p>
-    <p><%= rent.pets %></p>
-    <p><%= rent.smoker %></p>
-
-
-    <small class="text-muted"><%=time_ago_in_words rent.updated_at%></small>
-
-    <% end %>
-
-
+<% @rente.user_id.each do |rent| %>
+  <h2><%= rent.photos %></h2>
+  <h2><%= rent.title %></h2>
+  <p><%= rent.description %></p>
+  <h4> Ubicacion</h4>
+  <p><%= rent.address %></p>
+  <p><%= rent.town %></p>
+  <p><%= rent.city %></p>
+  <p><%= rent.postal_code %></p
+  <h4> Descripcion propiedad</h4>
+  <p><%= rent.rooms %></p>
+  <p><%= rent.bath %></p>
+  <p><%= rent.price %></p>
+  <h4> Roommate ideal</h4>
+  <p><%= rent.gender %></p>
+  <p><%= rent.time %></p>
+  <p><%= rent.lgtb %></p>
+  <p><%= rent.pets %></p>
+  <p><%= rent.smoker %></p>
+  <small class="text-muted"><%=time_ago_in_words rent.updated_at%></small>
+<% end %>
 
 <%= link_to 'Regresar', user_index_path, class: 'btn btn-danger'  %>

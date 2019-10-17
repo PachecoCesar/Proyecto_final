@@ -5,39 +5,29 @@ one:
   address: MyString
   town: MyString
   city: MyString
-  postal_code: 1
-  latitude: 1
-  longitude: 1
-  price: 1
-  photos: MyString
-  type: 
-  rooms: 1
+  latitude: 1.5
+  longitude: 1.5
+  title: MyString
+  phoyos: MyString
+  price: MyString
   description: MyString
-  time: MyString
+  kind_of: MyString
+  rooms: 1
+  period: MyString
   bath: MyString
-  gender: MyString
-  lgtb: false
-  pets: false
-  smoker: false
-  drugs: false
 
 two:
   user: two
   address: MyString
   town: MyString
   city: MyString
-  postal_code: 1
-  latitude: 1
-  longitude: 1
-  price: 1
-  photos: MyString
-  type: 
-  rooms: 1
+  latitude: 1.5
+  longitude: 1.5
+  title: MyString
+  phoyos: MyString
+  price: MyString
   description: MyString
-  time: MyString
+  kind_of: MyString
+  rooms: 1
+  period: MyString
   bath: MyString
-  gender: MyString
-  lgtb: false
-  pets: false
-  smoker: false
-  drugs: false

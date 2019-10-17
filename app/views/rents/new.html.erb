@@ -1,6 +1,6 @@
 <div class="FormRent">
   <h2>Nuevo arriendo</h2>
-  <%= form_with(model: @rent, local: true) do |form| %>
+<%= form_with(model: rent.new, local: true) do |form| %>
     <div class="field">
 
       <h4> Ubicacion</h4>
@@ -40,7 +40,7 @@
         <%= form.text_area :description %>
       </div>
 
-    
+
 
       <div class="rooms">
         <%= form.label :rooms %> <br>

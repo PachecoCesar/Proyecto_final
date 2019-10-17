@@ -5,21 +5,16 @@ class CreateRents < ActiveRecord::Migration[6.0]
       t.string :address
       t.string :town
       t.string :city
-      t.integer :postal_code
-      t.integer :latitude
-      t.integer :longitude
-      t.integer :price
+      t.float :latitude
+      t.float :longitude
+      t.string :title
       t.string :photos
-      t.string :type
-      t.integer :rooms
+      t.string :price
       t.string :description
-      t.string :time
+      t.string :kind_of
+      t.integer :rooms
+      t.string :period
       t.string :bath
-      t.string :gender
-      t.boolean :lgtb
-      t.boolean :pets
-      t.boolean :smoker
-      t.boolean :drugs
 
       t.timestamps
     end

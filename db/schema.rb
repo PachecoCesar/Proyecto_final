@@ -10,31 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_11_151828) do
+ActiveRecord::Schema.define(version: 2019_10_17_234452) do
 
   create_table "rents", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "address"
     t.string "town"
     t.string "city"
-    t.integer "postal_code"
-    t.integer "latitude"
-    t.integer "longitude"
-    t.integer "price"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "title"
     t.string "photos"
-    t.string "type"
-    t.integer "rooms"
+    t.string "price"
     t.string "description"
-    t.string "time"
+    t.string "kind_of"
+    t.integer "rooms"
+    t.string "period"
     t.string "bath"
-    t.string "gender"
-    t.boolean "lgtb"
-    t.boolean "pets"
-    t.boolean "smoker"
-    t.boolean "drugs"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "title"
     t.index ["user_id"], name: "index_rents_on_user_id"
   end
 
