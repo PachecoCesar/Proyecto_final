@@ -1,23 +1,29 @@
-<% @rente.user_id.each do |rent| %>
-  <h2><%= rent.photos %></h2>
-  <h2><%= rent.title %></h2>
-  <p><%= rent.description %></p>
-  <h4> Ubicacion</h4>
-  <p><%= rent.address %></p>
-  <p><%= rent.town %></p>
-  <p><%= rent.city %></p>
-  <p><%= rent.postal_code %></p
-  <h4> Descripcion propiedad</h4>
-  <p><%= rent.rooms %></p>
-  <p><%= rent.bath %></p>
-  <p><%= rent.price %></p>
-  <h4> Roommate ideal</h4>
-  <p><%= rent.gender %></p>
-  <p><%= rent.time %></p>
-  <p><%= rent.lgtb %></p>
-  <p><%= rent.pets %></p>
-  <p><%= rent.smoker %></p>
-  <small class="text-muted"><%=time_ago_in_words rent.updated_at%></small>
-<% end %>
-
-<%= link_to 'Regresar', user_index_path, class: 'btn btn-danger'  %>
+    <div class="container-show">
+      <div class="row">
+        <div class="col-7">
+          <tr>
+            <%= render 'shared/carousel'%>
+          </tr>
+        </div>
+        <div class="col">
+          <tr>
+            <h2><%= @rent.title %></h2>
+            <small class="text-muted"> Publicado:<%=time_ago_in_words @rent.updated_at%></small>
+            <hr>
+            <h5>Descripcion del inmueble</h5>
+            <p><%= @rent.description %></p>
+            <hr>
+            <p>Tipo de propiedad: <%= @rent.kind_of %></p>
+            <p>Cantidad de habitaciones: <%= @rent.rooms %></p>
+            <p>Baño: <%= @rent.bath %></p>
+            <p>Valor: <%= @rent.price %></p>
+            <td>Estadia minima: <%= @rent.period %>.</td>
+            <hr>
+            <p><strong>Dirección:</strong> <%= @rent.address %>, <%= @rent.town %>, <%= @rent.city %></p>
+            <%= link_to 'Regresar', users_index_path, class: 'btn btn-dark'  %>
+            <%= link_to 'Editar', edit_rent_path, class: 'btn btn-warning'  %>
+            <%= link_to 'Eliminar', rent_path, method: :delete, data: { confirm: 'Seguro quieres borrar tu publicacion?'}, class: 'btn btn-danger'  %>
+          </tr>
+        </div>
+      </div>
+    </div>

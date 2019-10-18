@@ -1,0 +1,76 @@
+<div class="container">
+  <%= form_with(model: @rent, local: true) do |form| %>
+  <div class="row">
+    <div class="col">
+      <h4> Descripcion  de la propiedad</h4>
+      <br>
+      <div class="title">
+        <%= form.label :title %> <br>
+        <%= form.text_field :title %>
+      </div>
+
+      <div class="photos">
+        <%= form.label :photos %> <br>
+        <%= form.text_field :photos %>
+      </div>
+
+      <div class="description">
+        <%= form.label :description %> <br>
+        <%= form.text_area :description %>
+      </div>
+
+    </div>
+    <div class="col">
+
+      <div class="kind_of">
+        <%= form.label :kind_of %> <br>
+        <%= form.text_field :kind_of %>
+      </div>
+
+      <div class="rooms">
+        <%= form.label :rooms %> <br>
+        <%= form.text_field :rooms %>
+      </div>
+
+      <div class="period">
+        <%= form.label :period %> <br>
+        <%= form.text_field :period %>
+      </div>
+
+      <div class="bath">
+        <%= form.label :bath %> <br>
+        <%= form.text_field :bath %>
+      </div>
+
+      <div class="price">
+        <%= form.label :price %> <br>
+        <%= form.text_field :price %>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4> Ubicacion</h4>
+      <br>
+      <div class="address">
+        <%= form.label :address %> <br>
+        <%= form.text_field :address %>
+      </div>
+
+      <div class="town">
+        <%= form.label :town %> <br>
+        <%= form.text_field :town %>
+      </div>
+
+      <div class="city">
+        <%= form.label :city %> <br>
+        <%= form.text_field :city %>
+      </div>
+
+      <div class="actions"> <br>
+        <%= form.submit "Publicar",class: "btn btn-danger"%>
+      </div>
+    </div>
+
+  </div>
+  <% end %>
+</div>

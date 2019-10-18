@@ -12,19 +12,40 @@ body {
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
   }
 
-nav .navbar-link li{
-  color: #000000 !important;
-  }
 
 .FormRent {
   background-color: #ffffff;
   padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 47rem 1rem 0rem;
+  margin: 1rem 10rem 0rem 10rem;
   border-style: solid;
   border-color: #333333;
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
   }
+
+.FormRent h2{
+  text-align: center;
+}
+
+.carousel-inner{
+  margin: auto;
+  width: auto;
+  height: 50rem;
+  max-height: 35rem;
+  display: block;
+  }
+
+
+.container-show{
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #333333;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
+
+}
 
 /*
 
