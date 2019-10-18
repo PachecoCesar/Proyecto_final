@@ -25,7 +25,7 @@ body {
 
 .FormRent h2{
   text-align: center;
-}
+ }
 
 .carousel-inner{
   margin: auto;
@@ -44,9 +44,16 @@ body {
   border-color: #333333;
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
+  }
 
-}
+.img-rent{
+  width: 80%;
+  height: 80%;
+ }
+ .index-rent{
+   margin-top: 2rem;
 
+  }
 /*
 
 

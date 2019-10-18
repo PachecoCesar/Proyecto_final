@@ -1,2 +1,22 @@
-<h1>Rents#index</h1>
-<p>Find me in app/views/rents/index.html.erb</p>
+<% @rents.each_slice(3) do |rents| %>
+<div class="card-deck index-rent">
+  <% rents.each do |rent| %>
+  <div class="card img-rent">
+    <%= image_tag rent.photos, class: "card-img" %>
+    <div class="card-body">
+      <h4 class="card-title"><%= rent.title %></h4>
+      <hr>
+      <p class="card-text"><%= rent.description %></p>
+      <hr>
+      <p><small>| Tipo de propiedad: <%= rent.kind_of %> |
+      Cantidad de habitaciones: <%= rent.rooms %> |
+      Baño: <%= rent.bath %> | </small></p>
+      <%= link_to 'Ver Publicación', @rent_path, class: 'btn btn-warning btn-sm  btn-block'  %>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Publicado: <%=time_ago_in_words rent.updated_at%></small>
+    </div>
+  </div>
+  <%end%>
+</div>
+<%end%>

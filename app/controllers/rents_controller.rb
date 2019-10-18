@@ -2,7 +2,6 @@ class RentsController < ApplicationController
   before_action :set_rent, only: [:show, :edit, :update, :destroy]
   def index
     @rents = Rent.all
-    @rent = Rent.new
   end
 
   def new

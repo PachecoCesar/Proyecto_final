@@ -7,10 +7,10 @@
         </div>
         <div class="col">
           <tr>
-            <h2><%= @rent.title %></h2>
+            <h1><%= @rent.title %></h1>
             <small class="text-muted"> Publicado:<%=time_ago_in_words @rent.updated_at%></small>
             <hr>
-            <h5>Descripcion del inmueble</h5>
+            <h5>Descripcion del inmueble :</h5>
             <p><%= @rent.description %></p>
             <hr>
             <p>Tipo de propiedad: <%= @rent.kind_of %></p>
@@ -20,9 +20,10 @@
             <td>Estadia minima: <%= @rent.period %>.</td>
             <hr>
             <p><strong>Dirección:</strong> <%= @rent.address %>, <%= @rent.town %>, <%= @rent.city %></p>
-            <%= link_to 'Regresar', users_index_path, class: 'btn btn-dark'  %>
             <%= link_to 'Editar', edit_rent_path, class: 'btn btn-warning'  %>
             <%= link_to 'Eliminar', rent_path, method: :delete, data: { confirm: 'Seguro quieres borrar tu publicacion?'}, class: 'btn btn-danger'  %>
+            <%= link_to 'Regresar', users_index_path, class: 'btn btn-dark float-right'  %>
+
           </tr>
         </div>
       </div>
