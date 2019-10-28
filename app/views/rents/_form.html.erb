@@ -10,18 +10,14 @@
       </div>
 
       <div class="photos">
-        <%= form.label :photos %> <br>
-        <%= form.text_field :photos %>
+        <%= form.label :image %> <br>
+        <%= form.file_field :image, multiple: true %>
       </div>
 
       <div class="description">
         <%= form.label :description %> <br>
         <%= form.text_area :description %>
       </div>
-
-    </div>
-    <div class="col">
-
       <div class="kind_of">
         <%= form.label :kind_of %> <br>
         <%= form.text_field :kind_of %>
@@ -47,6 +43,34 @@
         <%= form.text_field :price %>
       </div>
     </div>
+    <div class="col">
+      <h4>Preferencias</h4>
+      <br>
+      <div class="gender">
+        <%= form.label :gender %> <br>
+        <%= form.text_field :gender %>
+      </div>
+
+      <div class="smoker">
+        <%= form.label :smoker %> <br>
+        <%= form.text_field :smoker %>
+      </div>
+
+      <div class="pets">
+        <%= form.label :pets %>
+        <%= form.check_box :pets %>
+      </div>
+
+      <div class="lgtb">
+        <%= form.label :lgtb %>
+        <%= form.check_box :lgtb %>
+      </div>
+
+      <div class="parties">
+        <%= form.label :parties %> <br>
+        <%= form.text_field :parties %>
+      </div>
+    </div>
 
     <div class="col">
       <h4> Ubicacion</h4>
@@ -65,6 +89,8 @@
         <%= form.label :city %> <br>
         <%= form.text_field :city %>
       </div>
+
+
 
       <div class="actions"> <br>
         <%= form.submit "Publicar",class: "btn btn-danger"%>

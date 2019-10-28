@@ -1,7 +1,9 @@
 class RentsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_rent, only: [:show, :edit, :update, :destroy]
   def index
     @rents = Rent.all
+    @rent = Rent.new
   end
 
   def new
@@ -12,7 +14,7 @@ class RentsController < ApplicationController
     @rent = Rent.new(rent_params)
     @rent.user = current_user
     @rent.save
-    redirect_to rent_path(@rent)
+    redirect_to profile_path(@rent)
   end
 
   def show
@@ -24,6 +26,6 @@ class RentsController < ApplicationController
      @rent = Rent.find(params[:id])
    end
   def rent_params
-    params.require(:rent).permit(:user_id, :address, :town, :city, :title, :photos, :price, :description, :kind_of, :rooms, :period, :bath,)
+    params.require(:rent).permit(:user_id, :address, :town, :city, :title, :price, :description, :kind_of, :rooms, :period, :bath, images: [])
   end
 end

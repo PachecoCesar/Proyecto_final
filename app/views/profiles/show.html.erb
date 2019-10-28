@@ -1,0 +1,34 @@
+<div class="container-show">
+  <div class="row">
+    <div class="col-7">
+      <tr>
+        <% @rent.images.each do |image| %>
+          <%=  image_tag image %>
+        <% end %>
+      </tr>
+    </div>
+    <div class="col">
+      <tr>
+        <h1><%= @rent.title %></h1>
+        <small class="text-muted"> Publicado:<%=time_ago_in_words @rent.updated_at%></small>
+        <hr>
+        <h5>Descripcion del inmueble :</h5>
+        <p><%= @rent.description %></p>
+        <hr>
+        <p><strong>Tipo de propiedad:</strong> <%= @rent.kind_of %></p>
+        <p><strong>Cantidad de habitaciones:</strong> <%= @rent.rooms %></p>
+        <p><strong>Baño:</strong> <%= @rent.bath %></p>
+        <p><strong>Valor:</strong> <%= number_to_currency(@rent.price, precision: 0) %></p>
+        <p><strong>Estadia minima:</strong> <%= @rent.period %>.</p>
+  
+
+        <hr>
+        <p><strong>Dirección:</strong> <%= @rent.address %>, <%= @rent.town %>, <%= @rent.city %></p>
+        <%= link_to 'Editar', edit_rent_path, class: 'btn btn-warning'  %>
+        <%= link_to 'Eliminar', rent_path, method: :delete, data: { confirm: 'Seguro quieres borrar tu publicacion?'}, class: 'btn btn-danger'  %>
+        <%= link_to 'Regresar', profiles_index_path, class: 'btn btn-dark float-right'  %>
+
+      </tr>
+    </div>
+  </div>
+</div>
