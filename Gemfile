@@ -27,6 +27,7 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'erd'
 gem 'activeadmin'
+gem 'chartkick'
 
 # Use Active Storage variant
  gem 'image_processing', '~> 1.2'
