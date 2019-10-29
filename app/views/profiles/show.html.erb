@@ -2,9 +2,7 @@
   <div class="row">
     <div class="col-7">
       <tr>
-        <% @rent.images.each do |image| %>
-          <%=  image_tag image %>
-        <% end %>
+        <%= render 'shared/carousel'%>
       </tr>
     </div>
     <div class="col">
@@ -20,7 +18,7 @@
         <p><strong>Baño:</strong> <%= @rent.bath %></p>
         <p><strong>Valor:</strong> <%= number_to_currency(@rent.price, precision: 0) %></p>
         <p><strong>Estadia minima:</strong> <%= @rent.period %>.</p>
-  
+
 
         <hr>
         <p><strong>Dirección:</strong> <%= @rent.address %>, <%= @rent.town %>, <%= @rent.city %></p>

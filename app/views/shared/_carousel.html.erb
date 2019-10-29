@@ -7,7 +7,7 @@
   <div class="carousel-inner">
     <% @rent.images.each do |image| %>
      <div class="carousel-item active">
-       <%=  image_tag image.variant(resize: "200x200") %>
+       <%=  image_tag image %>
      </div>
    <% end %>
 
