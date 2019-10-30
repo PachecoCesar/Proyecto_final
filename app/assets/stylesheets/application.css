@@ -15,7 +15,7 @@ body {
 
 .FormRent {
   background-color: #ffffff;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   margin: 1rem 10rem 0rem 10rem;
   border-style: solid;
   border-color: #333333;
@@ -27,16 +27,46 @@ body {
   text-align: center;
  }
 
-.carousel-inner{
-  margin: auto;
-  width: auto;
-  height: 35rem;
-  max-height: 35rem;
-  display: block;
+.Ayuda {
+  background-color: #ffffff;
+  padding: 1.5rem 2.2rem 1.5rem 2.2rem;
+  margin: 0.7rem 1rem 0rem 1rem;
+  border-style: solid;
+  border-color: #333333;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
   }
 
+.Ayuda h2{
+  text-align: center;
+  }
 
-.container-show{
+.Buscar {
+  background-color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 47rem 1rem 0rem;
+  border-style: solid;
+  border-color: #333333;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
+  }
+
+.Experiencia {
+ background-image: url("https://i.imgur.com/gx1Zpt4.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 1rem 2rem 1rem 2rem;
+ margin: 1rem 1rem 5rem 1rem;
+ border-style: solid;
+ border-color: #333333;
+ border-width: thin;
+ box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
+ }
+
+
+
+
+.container-show {
   margin: 2rem 0rem 0rem 0rem;
   padding: 1rem 1rem 1rem 1rem;
   background-color: #ffffff;
@@ -46,11 +76,11 @@ body {
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #333333;
   }
 
-.img-rent{
+.img-rent {
   width: 80%;
   height: 80%;
  }
- .index-rent{
+ .index-rent {
    margin-top: 2rem;
 
   }

@@ -5,11 +5,16 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <% @rent.images.each do |image| %>
+
      <div class="carousel-item active">
-       <%=  image_tag image %>
+       <%=  image_tag @rent.image.variant(resize: "800x800") %>
      </div>
-   <% end %>
+     <div class="carousel-item">
+       <%=  image_tag @rent.image.variant(resize: "800x800") %>
+    </div>
+    <div class="carousel-item">
+      <%=  image_tag @rent.image.variant(resize: "800x800") %>
+    </div>
 
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

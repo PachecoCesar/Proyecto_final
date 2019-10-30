@@ -26,6 +26,6 @@ class RentsController < ApplicationController
      @rent = Rent.find(params[:id])
    end
   def rent_params
-    params.require(:rent).permit(:user_id, :address, :town, :city, :title, :price, :description, :kind_of, :rooms, :period, :bath, :gender, :smoker, :pets, :lgtb, :parties, images: [])
+    params.require(:rent).permit(:user_id, :address, :town, :city, :title, :price, :description, :kind_of, :rooms, :period, :bath, :gender, :smoker, :pets, :lgtb, :parties, :image)
   end
 end

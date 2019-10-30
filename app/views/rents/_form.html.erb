@@ -2,7 +2,7 @@
   <%= form_with(model: @rent, local: true) do |form| %>
   <div class="row">
     <div class="col">
-      <h4> Descripcion  de la propiedad</h4>
+      <h5> Descripcion  de la propiedad</h5>
       <br>
       <div class="title">
         <%= form.label :title %> <br>
@@ -10,8 +10,8 @@
       </div>
 
       <div class="photos">
-        <%= form.label :images %> <br>
-        <%= form.file_field :images, multiple: true %>
+        <%= form.label :image %> <br>
+        <%= form.file_field :image %>
       </div>
 
       <div class="description">
@@ -44,8 +44,7 @@
       </div>
     </div>
     <div class="col">
-      <h4>Preferencias</h4>
-      <br>
+      <h5>Preferencias</h5>
       <div class="gender">
         <%= form.label :gender %> <br>
         <%= form.text_field :gender %>
@@ -56,12 +55,9 @@
         <%= form.text_field :smoker %>
       </div>
 
-      <div class="pets">
+      <div class="prefereces">
         <%= form.label :pets %>
         <%= form.check_box :pets %>
-      </div>
-
-      <div class="lgtb">
         <%= form.label :lgtb %>
         <%= form.check_box :lgtb %>
       </div>
@@ -70,11 +66,8 @@
         <%= form.label :parties %> <br>
         <%= form.text_field :parties %>
       </div>
-    </div>
-
-    <div class="col">
-      <h4> Ubicacion</h4>
-      <br>
+      <br><br>
+      <h5> Ubicacion</h5>
       <div class="address">
         <%= form.label :address %> <br>
         <%= form.text_field :address %>
@@ -89,8 +82,6 @@
         <%= form.label :city %> <br>
         <%= form.text_field :city %>
       </div>
-
-
 
       <div class="actions"> <br>
         <%= form.submit "Publicar",class: "btn btn-danger"%>
